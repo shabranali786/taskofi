@@ -58,7 +58,8 @@
   .vs-icons {
     top: 41%;
   }
-  /* .animated-boxs::before{
-
-  } */
+  .block-title {
+    font-size: 27px;
+    font-weight: 700;
+  }
 }
