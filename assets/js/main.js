@@ -88,3 +88,7 @@ document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight - 1 + "px"
 );
+
+$(".navbar-collapse a").click(function () {
+  $(".navbar-collapse").collapse("hide");
+});
