@@ -1,0 +1,33 @@
+.footer-links {
+  li {
+    a {
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      &:hover {
+        color: var(--primary-clr);
+      }
+    }
+  }
+}
+
+.social-links {
+  li {
+    a {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      aspect-ratio: 1;
+      @include border-radius(50px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      i {
+        font-size: 16px;
+      }
+      &:hover {
+        background: var(--primary-clr);
+      }
+    }
+  }
+}

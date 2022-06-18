@@ -1,0 +1,89 @@
+//####################
+// START VARIABALES
+// #####################
+:root {
+  --primary-clr: #72be44;
+  --primary-rgb-clr: 114, 190, 68;
+  --section-padding: 70px 0;
+  --border-clr: #dedede;
+  --black-btn-clr: #111111;
+  --black-clr-1: #111111;
+  --anker-hover-clr: #111111;
+}
+
+.primary-bg {
+  background: var(--primary-clr) !important;
+}
+
+.primary-text {
+  color: var(--primary-clr) !important;
+}
+.bg-black {
+  background: #16151a;
+}
+.primary-anchor {
+  color: var(--primary-clr) !important;
+  &:hover {
+    color: var(--anker-hover-clr) !important;
+  }
+}
+
+.secondary-anchor {
+  color: var(--secondary-clr) !important;
+  &:hover {
+    color: var(--primary-clr) !important;
+  }
+}
+
+.secondary-bg {
+  background: var(--secondary-clr) !important;
+}
+
+.seconday-text {
+  color: var(--secondary-clr) !important;
+}
+
+// ACTIVE BTN
+.active-btn {
+  background: var(--primary-clr) !important;
+  color: white !important;
+}
+
+.active-text {
+  color: var(--primary-clr) !important;
+}
+
+// END ACTIVE BTN
+//####################
+// END VARIABALES
+// #####################
+//####################
+// START IMPORT FILES
+// #####################
+@import "assets/sass/_all_pages";
+@import "assets/sass/_all_components";
+//####################
+// END IMPORT FILES
+// #####################
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-clr);
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2;
+}
+
+::selection {
+  color: #fff;
+  background: var(--primary-clr);
+  text-shadow: none;
+}

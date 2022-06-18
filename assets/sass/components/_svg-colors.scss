@@ -1,0 +1,26 @@
+path,
+line {
+  &.svg-fill-primary-color {
+    fill: var(--primary-clr);
+  }
+  &.svg-fill-black-color {
+    fill: #333333;
+  }
+  &.svg-stroke-primary-color {
+    stroke: var(--primary-clr);
+  }
+  &.svg-stroke-black-color {
+    stroke: #333333;
+  }
+}
+circle {
+  &.svg-stroke-primary-color {
+    stroke: var(--primary-clr);
+  }
+}
+
+stop {
+  &.svg-stop-primary-color {
+    stop-color: var(--primary-clr);
+  }
+}

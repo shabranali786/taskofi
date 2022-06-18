@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* global */
+  .section-title {
+    font-size: 30px;
+  }
+  .live-chat-img img.live-chat-img1,
+  .live-chat-img img.live-chat-img2 {
+    width: 120px;
+  }
+  .comment-box p {
+    font-size: 10px;
+  }
+  .live-chat-img .box .text-end {
+    margin-top: 6rem;
+  }
+  .live-chat-img .box .text-end .comment-box {
+    position: relative;
+    right: 0;
+  }
+  .cover-hero-img > img {
+    width: 256px;
+    margin: auto;
+  }
+  .intro-papers {
+    --equal-height: -10px;
+  }
+  .intro-papers img:nth-child(1) {
+    top: 116px;
+    left: 23px;
+    width: 43px;
+  }
+  .intro-papers img:nth-child(2) {
+    top: -20px;
+    left: 79px;
+    width: 57px;
+  }
+  .intro-papers img:nth-child(4) {
+    top: -26px;
+    right: 30px;
+    width: 60px;
+  }
+  .animated-boxs {
+    --show-boxs-space: -10px;
+  }
+  .vs-icons img {
+    width: 41px;
+  }
+  .vs-icons {
+    top: 41%;
+  }
+  /* .animated-boxs::before{
+
+  } */
+}

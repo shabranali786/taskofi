@@ -1,0 +1,180 @@
+.heighLignt-card,
+.works-card {
+  box-shadow: 0px 4px 38px 0px #44444417;
+  padding: 2rem;
+  text-align: center;
+  @include border-radius(15px);
+  height: 100%;
+  .icons {
+    width: 64px;
+    aspect-ratio: 1;
+    padding: 3px;
+    @include border-radius(50%);
+    background: rgba(var(--primary-rgb-clr), 0.099);
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+// how is work section
+.works-card {
+  box-shadow: none;
+  border: 1px solid #383838;
+  padding: 1rem;
+  height: 100%;
+  .icons {
+    background: white;
+    padding: 10px;
+    img {
+      width: auto;
+    }
+  }
+  h5 {
+    color: var(--primary-clr);
+  }
+  p {
+    color: white;
+  }
+}
+
+// assistance card
+.Assistant-card {
+  height: 100%;
+  &.bg-black {
+    .text-center {
+      border-bottom: 1px solid white;
+    }
+  }
+  &.primary-bg {
+    .text-center {
+      border-bottom: 1px solid var(--black-clr-1);
+    }
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    color: white;
+  }
+  img {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  ul {
+    li {
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+.vs-icons {
+  width: 120px;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  img {
+    width: 68px;
+    aspect-ratio: 1;
+    z-index: 1;
+  }
+  span {
+    position: absolute;
+    border: 6px solid white;
+    border-radius: 50%;
+    animation: ripple 1.8s ease-out infinite;
+  }
+  span:nth-child(2) {
+    animation-delay: -0.6s;
+  }
+  @keyframes ripple {
+    from {
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+    to {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// pricing card
+.pricing-blur-effects {
+  &:hover {
+    .pricing-card {
+      filter: blur(1.2px);
+    }
+    [class^="col-"] {
+      &:hover {
+        .pricing-card {
+          filter: blur(0px);
+          transform: initial;
+        }
+      }
+    }
+  }
+}
+.pricing-card {
+  position: relative;
+  @include transition(0.5s !important);
+  .pricing-header {
+    h5 {
+      margin: 0;
+      font-weight: 700;
+    }
+    & h5:nth-child(1) {
+      font-size: 18px;
+    }
+    & h5:nth-child(2) {
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      small {
+        font-size: 14px;
+      }
+    }
+  }
+  &.bg-black {
+    transform: scale(1.06);
+    margin-top: -1.2rem;
+    .pricing-header {
+      border-bottom: 1px solid #383838;
+    }
+    .pricing-footer {
+      border-top: 1px solid #383838;
+    }
+  }
+  &.bg-white {
+    border: 1px solid #ebebeb;
+    .pricing-header {
+      border-bottom: 1px solid #ebebeb;
+    }
+    .pricing-footer {
+      border-top: 1px solid #ebebeb;
+    }
+  }
+  .pricing-body {
+    height: 350px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
