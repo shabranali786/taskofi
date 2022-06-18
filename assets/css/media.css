@@ -50,6 +50,8 @@
     width: 60px;
   }
   .animated-boxs {
+    --box-width: 130px;
+    --box-height: 130px;
     --show-boxs-space: -10px;
   }
   .vs-icons img {
@@ -61,5 +63,8 @@
   .block-title {
     font-size: 27px;
     font-weight: 700;
+  }
+  .pricing-card.bg-black {
+    transform: inherit;
   }
 }
